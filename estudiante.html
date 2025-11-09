@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel del Estudiante</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="main-header">
+    <h1>Plataforma de Prácticas Profesionales</h1>
+    <nav class="main-nav">
+    <a href="index.html">Inicio</a>
+    <a href="estudiante.html" class="active">Estudiante</a>
+    <a href="empresa.html">Empresa</a>
+    <a href="universidad.html">Universidad</a>
+    </nav>
+</header>
+
+<div class="sub-nav">
+    <nav>
+    <div class="nav-left">
+        <a href="estudiante.html" class="active">Vacantes</a>
+        <a href="#">Mis Postulaciones</a>
+    </div>
+    <div class="nav-right">
+        <a href="index.html" class="logout">Cerrar sesión</a>
+    </div>
+    </nav>
+</div>
+
+<div class="container">
+    <h2>Vacantes disponibles</h2>
+
+    <div class="card">
+    <h3>Desarrollador Web Junior</h3>
+    <p><strong>Empresa:</strong> TechSolutions</p>
+    <p><strong>Ubicación:</strong> Medellín</p>
+    <p><strong>Descripción:</strong> Apoyo en desarrollo de sitios web con HTML, CSS y JS.</p>
+    <button onclick="postular('Desarrollador Web Junior')">Postularme</button>
+    </div>
+
+    <div class="card">
+    <h3>Asistente de Soporte Técnico</h3>
+    <p><strong>Empresa:</strong> SoftHelp</p>
+    <p><strong>Ubicación:</strong> Envigado</p>
+    <p><strong>Descripción:</strong> Atención de incidencias y soporte a usuarios.</p>
+    <button onclick="postular('Asistente de Soporte Técnico')">Postularme</button>
+    </div>
+</div>
+
+<script>
+function postular(nombre) {
+    alert("✅ Usted se ha postulado a '" + nombre + "' exitosamente.");
+}
+</script>
+
+</body>
+</html>

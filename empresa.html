@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel de Empresa</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="main-header">
+<h1>Plataforma de Prácticas Profesionales</h1>
+<nav class="main-nav">
+    <a href="index.html">Inicio</a>
+    <a href="estudiante.html">Estudiante</a>
+    <a href="empresa.html" class="active">Empresa</a>
+    <a href="universidad.html">Universidad</a>
+</nav>
+</header>
+
+<div class="sub-nav">
+<nav>
+    <div class="nav-left">
+    <a href="#">Publicar Vacante</a>
+    <a href="#">Postulaciones</a>
+    </div>
+    <div class="nav-right">
+    <a href="index.html" class="logout">Cerrar sesión</a>
+    </div>
+</nav>
+</div>
+
+<div class="container">
+<h2>Publicar nueva vacante</h2>
+<form>
+    <label>Título de la vacante:</label>
+    <input type="text" placeholder="Ej. Desarrollador Web">
+
+    <label>Descripción:</label>
+    <textarea rows="4" placeholder="Detalles de la vacante..."></textarea>
+
+    <label>Ubicación:</label>
+    <input type="text" placeholder="Medellín, Antioquia">
+
+    <button>Guardar vacante</button>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Inicio de Sesión - Prácticas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="main-header">
+    <h1>Plataforma de Prácticas Profesionales</h1>
+    <nav class="main-nav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="estudiante.html">Estudiante</a>
+    <a href="empresa.html">Empresa</a>
+    <a href="universidad.html">Universidad</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Inicio de Sesión</h2>
+    <form>
+    <label for="email">Correo institucional:</label>
+    <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" placeholder="••••••••" required>
+
+    <label for="rol">Selecciona tu rol:</label>
+    <select id="rol">
+        <option>Estudiante</option>
+        <option>Empresa</option>
+        <option>Universidad</option>
+    </select>
+
+    <button type="submit">Ingresar</button>
+    </form>
+</div>
+</body>
+</html>

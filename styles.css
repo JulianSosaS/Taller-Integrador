@@ -1,0 +1,151 @@
+/* ======= Estilos globales ======= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6fc;
+  margin: 0;
+  padding: 0;
+  color: #2f3640;
+}
+
+/* ======= Barra principal ======= */
+.main-header {
+  background-color: #1e3799;
+  color: white;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-header h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: #273c75;
+  padding: 0.6rem 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #00a8ff;
+  border-bottom: 2px solid #00a8ff;
+}
+
+/* ======= Sub-navegación ======= */
+.sub-nav {
+  background-color: #dcdde1;
+  border-bottom: 2px solid #b2bec3;
+  box-shadow: inset 0 -1px 2px rgba(0,0,0,0.05);
+}
+
+.sub-nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5%;
+}
+
+.nav-left {
+  display: flex;
+  gap: 30px;
+}
+
+.sub-nav a {
+  color: #2f3640;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.sub-nav a:hover {
+  color: #1e3799;
+}
+
+.sub-nav a.active {
+  color: #1e3799;
+  border-bottom: 2px solid #1e3799;
+}
+
+/* ======= Botón de Cerrar sesión ======= */
+.nav-right a.logout {
+  background-color: #e84118;
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.nav-right a.logout:hover {
+  background-color: #c23616;
+}
+
+/* ======= Contenido principal ======= */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #273c75;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #dcdde1;
+  padding-bottom: 0.5rem;
+}
+
+.card {
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: #273c75;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #40739e;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+}
