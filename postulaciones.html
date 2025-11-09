@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mis Postulaciones</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Plataforma de Prácticas Profesionales</h1>
+    <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="estudiante.html" class="active">Estudiante</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="universidad.html">Universidad</a>
+    </nav>
+</header>
+
+<div class="sub-nav">
+    <nav>
+        <div class="nav-left">
+            <a href="estudiante.html">Vacantes</a>
+            <a href="postulaciones.html" class="active">Mis Postulaciones</a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="logout">Cerrar sesión</a>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <h2>Mis Postulaciones</h2>
+    <div id="postulacion-container"></div>
+</div>
+
+<script>
+const vacante = localStorage.getItem("postulacion");
+
+if (vacante) {
+    document.getElementById("postulacion-container").innerHTML = `
+        <div class="card">
+            <h3>${vacante}</h3>
+            <p><strong>Estado:</strong> Pendiente de revisión</p>
+            <button onclick="cancelarPostulacion()">Cancelar postulación</button>
+        </div>
+    `;
+} else {
+    document.getElementById("postulacion-container").innerHTML = `
+        <p>No tienes postulaciones registradas.</p>
+    `;
+}
+
+function cancelarPostulacion() {
+    localStorage.removeItem("postulacion");
+    alert("Has cancelado tu postulación.");
+    location.reload();
+}
+</script>
+
+</body>
+</html>
